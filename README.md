@@ -14,10 +14,6 @@ This add-on will work with:
 
 ### Installation
 
-This add-on can be treated as both a WP plugin and a theme include.
-
-**Install as Plugin**
-
 1. Download .zip
 2. Extract .zip and rename folder to 'acf-multidates-picker'
 3. Copy the 'acf-multidates-picker' folder into your plugins folder
