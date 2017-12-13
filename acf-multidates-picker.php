@@ -7,8 +7,8 @@ Description: Advanced Custom Fields Multidates Picker
 Version: 1.0.0
 Author: Nan GUO (Prodigious)
 Author URI: https://github.com/nan-guo
-License: MIT
-License URI: https://opensource.org/licenses/MIT
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 // exit if accessed directly
