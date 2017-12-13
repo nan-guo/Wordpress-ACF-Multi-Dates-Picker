@@ -218,7 +218,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
    	*  $args that related to the current screen such as $args['post_id']
    	*
    	*  @type	function
-   	*  @date	6/03/2014
+   	*  @date	13/12/2017
    	*  @since	5.0.0
    	*
    	*  @param	$args (array)
@@ -244,7 +244,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	action (admin_footer)
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	n/a
 	*  @return	n/a
@@ -269,7 +269,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	action (admin_enqueue_scripts)
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	n/a
 	*  @return	n/a
@@ -292,7 +292,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	action (admin_head)
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	n/a
 	*  @return	n/a
@@ -314,7 +314,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$value (mixed) the value found in the database
 	*  @param	$post_id (mixed) the $post_id from which the value was loaded
@@ -340,7 +340,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$value (mixed) the value found in the database
 	*  @param	$post_id (mixed) the $post_id from which the value was loaded
@@ -366,7 +366,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$value (mixed) the value which was loaded from the database
 	*  @param	$post_id (mixed) the $post_id from which the value was loaded
@@ -411,7 +411,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  messages to the user if the value is not correct
 	*
 	*  @type	filter
-	*  @date	11/02/2014
+	*  @date	13/12/2017
 	*  @since	5.0.0
 	*
 	*  @param	$valid (boolean) validation status based on the value and the field's required setting
@@ -454,7 +454,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  Please note that saving a blank value is treated as an update, not a delete
 	*
 	*  @type	action
-	*  @date	6/03/2014
+	*  @date	13/12/2017
 	*  @since	5.0.0
 	*
 	*  @param	$post_id (mixed) the $post_id from which the value was deleted
@@ -479,7 +479,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  This filter is applied to the $field after it is loaded from the database
 	*
 	*  @type	filter
-	*  @date	23/01/2013
+	*  @date	13/12/2017
 	*  @since	3.6.0	
 	*
 	*  @param	$field (array) the field array holding all the field options
@@ -503,7 +503,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  This filter is applied to the $field before it is saved to the database
 	*
 	*  @type	filter
-	*  @date	23/01/2013
+	*  @date	13/12/2017
 	*  @since	3.6.0
 	*
 	*  @param	$field (array) the field array holding all the field options
@@ -527,7 +527,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  This action is fired after a field is deleted from the database
 	*
 	*  @type	action
-	*  @date	11/02/2014
+	*  @date	13/12/2017
 	*  @since	5.0.0
 	*
 	*  @param	$field (array) the field array holding all the field options

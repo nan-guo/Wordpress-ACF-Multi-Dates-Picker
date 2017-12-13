@@ -21,7 +21,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  Set name / label needed for actions / filters
 	*
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*/
 	
 	function __construct( $settings )
@@ -53,7 +53,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	action
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$field	- an array holding all the field's data
 	*/
@@ -107,7 +107,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	action
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*/
 	
 	function create_field( $field )
@@ -141,7 +141,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  $info	http://codex.wordpress.org/Plugin_API/Action_Reference/admin_enqueue_scripts
 	*  @type	action
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*/
 
 	function input_admin_enqueue_scripts()
@@ -181,7 +181,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  @info	http://codex.wordpress.org/Plugin_API/Action_Reference/admin_head
 	*  @type	action
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*/
 
 	function input_admin_head()
@@ -199,7 +199,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*  $info	http://codex.wordpress.org/Plugin_API/Action_Reference/admin_enqueue_scripts
 	*  @type	action
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*/
 
 	function field_group_admin_enqueue_scripts()
@@ -233,7 +233,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$value - the value found in the database
 	*  @param	$post_id - the $post_id from which the value was loaded
@@ -256,7 +256,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$value - the value which will be saved in the database
 	*  @param	$post_id - the $post_id of which the value will be saved
@@ -279,7 +279,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$value	- the value which was loaded from the database
 	*  @param	$post_id - the $post_id from which the value was loaded
@@ -310,7 +310,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$value	- the value which was loaded from the database
 	*  @param	$post_id - the $post_id from which the value was loaded
@@ -341,7 +341,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$field - the field array holding all the field options
 	*
@@ -362,7 +362,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 	*
 	*  @type	filter
 	*  @since	3.6
-	*  @date	23/01/13
+	*  @date	13/12/2017
 	*
 	*  @param	$field - the field array holding all the field options
 	*  @param	$post_id - the field group ID (post_type = acf)
