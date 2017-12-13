@@ -1,0 +1,8 @@
+.hide{
+	display: none;
+	opacity: 0;
+}
+
+.pdg-acf-multidates-picker-input{
+	min-height: 0 !important;
+}
