@@ -18,3 +18,11 @@ This add-on will work with:
 2. Extract .zip and rename folder to 'acf-multidates-picker'
 3. Copy the 'acf-multidates-picker' folder into your plugins folder
 4. Activate the plugin via the Plugins admin page
+
+### Screenshots
+
+![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/1.png)
+
+![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/2.png)
+
+![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/3.png)
