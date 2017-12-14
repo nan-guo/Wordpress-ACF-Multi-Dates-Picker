@@ -5,10 +5,10 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 
 // check if class already exists
-if( !class_exists('pdg_acf_field_multidates_picker') ) :
+if( !class_exists('pdg_acf_field_multi_dates_picker') ) :
 
 
-class pdg_acf_field_multidates_picker extends acf_field {
+class pdg_acf_field_multi_dates_picker extends acf_field {
 	
 	
 	/*
@@ -30,14 +30,14 @@ class pdg_acf_field_multidates_picker extends acf_field {
 		*  name (string) Single word, no spaces. Underscores allowed
 		*/
 		
-		$this->name = 'multidates_picker';
+		$this->name = 'multi_dates_picker';
 		
 		
 		/*
 		*  label (string) Multiple words, can include spaces, visible when selecting a field type
 		*/
 		
-		$this->label = __('Multidates Picker', 'acf-multidates-picker');
+		$this->label = __('Multi Dates Picker', 'acf-multi-dates-picker');
 		
 		
 		/*
@@ -58,11 +58,11 @@ class pdg_acf_field_multidates_picker extends acf_field {
 		
 		/*
 		*  l10n (array) Array of strings that are used in JavaScript. This allows JS strings to be translated in PHP and loaded via:
-		*  var message = acf._e('multidates_picker', 'error');
+		*  var message = acf._e('multi-dates_picker', 'error');
 		*/
 		
 		$this->l10n = array(
-			'error'				=> _x('Error!', 'acf-multidates-picker'),
+			'error'				=> _x('Error!', 'acf-multi-dates-picker'),
 		);
 		
 		
@@ -105,13 +105,13 @@ class pdg_acf_field_multidates_picker extends acf_field {
 		*/
 
 		acf_render_field_setting( $field, array(
-			'label'			=> __('Display Input','acf-multidates-picker'),
-			'instructions'	=> __('Display input in the backoffice','acf-multidates-picker'),
+			'label'			=> __('Display Input','acf-multi-dates-picker'),
+			'instructions'	=> __('Display input in the backoffice','acf-multi-dates-picker'),
 			'type'			=> 'radio',
 			'name'			=> 'display_input',
 			'choices'		=> array(
-				false		=> __('No','acf-multidates-picker'),
-				true		=> __('Yes','acf-multidates-picker'),
+				false		=> __('No','acf-multi-dates-picker'),
+				true		=> __('Yes','acf-multi-dates-picker'),
 			)
 		));
 	}
@@ -137,9 +137,9 @@ class pdg_acf_field_multidates_picker extends acf_field {
 		$display_input = $field['display_input'];
 		// html
 		?>
-		<div class="pdg-acf-multidates-picker pdg-acf-multidates-picker-wrap">
+		<div class="pdg-acf-multi-dates-picker pdg-acf-multi-dates-picker-wrap">
 			<div class="pdg-mdp-container"></div>
-			<textarea id="<?php echo esc_attr($field['id']); ?>" class="pdg-acf-multidates-picker-input<?php if(!$field['display_input']) echo ' hide'; ?>" name="<?php echo esc_attr($field['name']); ?>"><?php echo esc_attr($field['value']) ?></textarea>
+			<textarea id="<?php echo esc_attr($field['id']); ?>" class="pdg-acf-multi-dates-picker-input<?php if(!$field['display_input']) echo ' hide'; ?>" name="<?php echo esc_attr($field['name']); ?>"><?php echo esc_attr($field['value']) ?></textarea>
 		</div>
 		<?php
 	}
@@ -166,19 +166,19 @@ class pdg_acf_field_multidates_picker extends acf_field {
 		$version = $this->settings['version'];
 		
 		// register & include JS
-		wp_register_script('acf-multidates-picker-lib', "{$url}assets/js/jquery-ui.multidatespicker.js", array('acf-input'), $version);
-		wp_enqueue_script('acf-multidates-picker-lib');
+		wp_register_script('acf-multi-dates-picker-lib', "{$url}assets/js/jquery-ui.multidatespicker.js", array('acf-input'), $version);
+		wp_enqueue_script('acf-multi-dates-picker-lib');
 
-		wp_register_script('acf-multidates-picker', "{$url}assets/js/input.js", array('acf-input'), $version);
-		wp_enqueue_script('acf-multidates-picker');
+		wp_register_script('acf-multi-dates-picker', "{$url}assets/js/input.js", array('acf-input'), $version);
+		wp_enqueue_script('acf-multi-dates-picker');
 		
 		
 		// register & include CSS
-		wp_register_style('acf-multidates-picker-lib', "{$url}assets/css/jquery-ui.multidatespicker.css", array('acf-input'), $version);
-		wp_enqueue_style('acf-multidates-picker-lib');
+		wp_register_style('acf-multi-dates-picker-lib', "{$url}assets/css/jquery-ui.multidatespicker.css", array('acf-input'), $version);
+		wp_enqueue_style('acf-multi-dates-picker-lib');
 
-		wp_register_style('acf-multidates-picker', "{$url}assets/css/input.css", array('acf-input'), $version);
-		wp_enqueue_style('acf-multidates-picker');
+		wp_register_style('acf-multi-dates-picker', "{$url}assets/css/input.css", array('acf-input'), $version);
+		wp_enqueue_style('acf-multi-dates-picker');
 		
 	}
 
@@ -435,7 +435,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 		// Advanced usage
 		if( $value < $field['custom_minimum_setting'] )
 		{
-			$valid = __('The value is too little!','acf-multidates-picker'),
+			$valid = __('The value is too little!','acf-multi-dates-picker'),
 		}
 		
 		
@@ -549,7 +549,7 @@ class pdg_acf_field_multidates_picker extends acf_field {
 
 
 // initialize
-new pdg_acf_field_multidates_picker( $this->settings );
+new pdg_acf_field_multi_dates_picker( $this->settings );
 
 
 // class_exists check

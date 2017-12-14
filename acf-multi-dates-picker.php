@@ -1,9 +1,9 @@
 <?php
 
 /*
-Plugin Name: Advanced Custom Fields Multidates Picker
-Plugin URI: https://github.com/nan-guo/Wordpress-ACF-Multidates-Picker
-Description: Advanced Custom Fields Multidates Picker
+Plugin Name: Advanced Custom Fields Multi Dates Picker
+Plugin URI: https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker
+Description: Advanced Custom Fields Multi Dates Picker
 Version: 1.0.0
 Author: Nan GUO (Prodigious)
 Author URI: https://github.com/nan-guo
@@ -16,9 +16,9 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 
 // check if class already exists
-if( !class_exists('pdg_acf_plugin_multidates_picker') ) :
+if( !class_exists('pdg_acf_plugin_multi_dates_picker') ) :
 
-class pdg_acf_plugin_multidates_picker {
+class pdg_acf_plugin_multi_dates_picker {
 	
 	// vars
 	var $settings;
@@ -50,7 +50,7 @@ class pdg_acf_plugin_multidates_picker {
 		
 		// set text domain
 		// https://codex.wordpress.org/Function_Reference/load_plugin_textdomain
-		load_plugin_textdomain( 'acf-multidates-picker', false, plugin_basename( dirname( __FILE__ ) ) . '/lang' ); 
+		load_plugin_textdomain( 'acf-multi-dates-picker', false, plugin_basename( dirname( __FILE__ ) ) . '/lang' ); 
 		
 		
 		// include field
@@ -80,7 +80,7 @@ class pdg_acf_plugin_multidates_picker {
 		
 		
 		// include
-		include_once('fields/class-pdg-acf-field-multidates-picker-v' . $version . '.php');
+		include_once('fields/class-pdg-acf-field-multi-dates-picker-v' . $version . '.php');
 		
 	}
 	
@@ -88,7 +88,7 @@ class pdg_acf_plugin_multidates_picker {
 
 
 // initialize
-new pdg_acf_plugin_multidates_picker();
+new pdg_acf_plugin_multi_dates_picker();
 
 
 // class_exists check

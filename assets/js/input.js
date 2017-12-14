@@ -13,13 +13,13 @@
 		*  @return	n/a
 		*/
 		
-		acf.add_action('ready_field/type=multidates_picker', function( $el ){
+		acf.add_action('ready_field/type=multi_dates_picker', function( $el ){
 
 		});
-		acf.add_action('load_field/type=multidates_picker', function( $el ){
+		acf.add_action('load_field/type=multi_dates_picker', function( $el ){
 			init($el)
 		});
-		acf.add_action('append_field/type=multidates_picker', function( $el ){
+		acf.add_action('append_field/type=multi_dates_picker', function( $el ){
 			init($el)
 		});
 
@@ -39,7 +39,7 @@
 		$(document).on('acf/setup_fields', function(e, postbox){
 			
 			// find all relevant fields
-			$(postbox).find('.field[data-field_type="multidates_picker"]').each(function(){
+			$(postbox).find('.field[data-field_type="multi_dates_picker"]').each(function(){
 				
 				// initialize
 				init($(this));
@@ -55,7 +55,7 @@
 		var $dates = [];
 		var $defaultDate = new Date();
 
-		$field = $el.find('.pdg-acf-multidates-picker-input');
+		$field = $el.find('.pdg-acf-multi-dates-picker-input');
 		
 		if($field.text() != '') {
 			$dates = jQuery.map($field.text().split(","), jQuery.trim);
