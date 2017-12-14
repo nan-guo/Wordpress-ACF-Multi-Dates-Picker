@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Advanced Custom Fields Multi Dates Picker
+Plugin Name: ACF Multi Dates Picker
 Plugin URI: https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker
 Description: Advanced Custom Fields Multi Dates Picker
 Version: 1.0.0

@@ -1,6 +1,6 @@
 # ACF WordPress Multidates Picker Field
 
-Adds a 'Multidates Picker' field type for the [Advanced Custom Fields](http://wordpress.org/extend/plugins/advanced-custom-fields/) WordPress plugin.
+Adds a 'Multi Dates Picker' field type for the [Advanced Custom Fields](http://wordpress.org/extend/plugins/advanced-custom-fields/) WordPress plugin.
 
 -----------------------
 
@@ -21,8 +21,8 @@ This add-on will work with:
 
 ### Screenshots
 
-![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/1.png)
+![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/screenshot-1.png)
 
-![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/2.png)
+![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/screenshot-2.png)
 
-![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/3.png)
+![screenshot](https://github.com/nan-guo/Wordpress-ACF-Multi-Dates-Picker/blob/master/screenshots/screenshot-3.png)
