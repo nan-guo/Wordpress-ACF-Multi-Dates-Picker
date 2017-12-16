@@ -11,11 +11,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Adds a 'Multi Dates Picker' field type for the [Advanced Custom Fields](http://wordpress.org/extend/plugins/advanced-custom-fields/) WordPress plugin.
 
-= Compatibility =
+== Compatibility ==
 
 This ACF field type is compatible with:
-* ACF 5
-* ACF 4
+- ACF 5
+- ACF 4
 
 == Screenshots ==
 1. Field multi dates picker
