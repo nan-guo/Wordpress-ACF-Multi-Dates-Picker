@@ -41,5 +41,5 @@ Initial Release.
 * Initial Release.
 
 == Additional Info ==
-** Company : Prodigious
-** Author: Nan GUO
+Author: Nan GUO
+Company : Prodigious
