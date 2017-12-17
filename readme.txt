@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Adds a 'Multi Dates Picker' field type for the [Advanced Custom Fields](http://wordpress.org/extend/plugins/advanced-custom-fields/) WordPress plugin.
+Adds a Multi Dates Picker field type for the [Advanced Custom Fields](http://wordpress.org/extend/plugins/advanced-custom-fields/) WordPress plugin.
 
 == Compatibility ==
 
