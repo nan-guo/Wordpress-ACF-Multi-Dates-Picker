@@ -244,7 +244,7 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	
 	function load_value( $value, $post_id, $field )
 	{
-		// Note: This function can be removed if not used
+		$value = json_encode($value);
 		return $value;
 	}
 	
@@ -267,7 +267,7 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	
 	function update_value( $value, $post_id, $field )
 	{
-		// Note: This function can be removed if not used
+		$value = explode(', ', $value);
 		return $value;
 	}
 	
@@ -290,15 +290,8 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	
 	function format_value( $value, $post_id, $field )
 	{
-		// defaults?
-		/*
-		$field = array_merge($this->defaults, $field);
-		*/
-		
-		// perhaps use $field['preview_size'] to alter the $value?
-		
-		
-		// Note: This function can be removed if not used
+		$value = json_decode($value);
+		$value = implode(',', $value);
 		return $value;
 	}
 	
@@ -321,15 +314,7 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	
 	function format_value_for_api( $value, $post_id, $field )
 	{
-		// defaults?
-		/*
-		$field = array_merge($this->defaults, $field);
-		*/
-		
-		// perhaps use $field['preview_size'] to alter the $value?
-		
-		
-		// Note: This function can be removed if not used
+		$value = json_decode($value);
 		return $value;
 	}
 	

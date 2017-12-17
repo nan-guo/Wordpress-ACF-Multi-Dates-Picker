@@ -135,11 +135,15 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	
 	function render_field( $field ) {				
 		$display_input = $field['display_input'];
+		$value = $field['value'];
+		if(is_array($value)) {
+			$value = implode(',', $value);
+		}
 		// html
 		?>
 		<div class="pdg-acf-multi-dates-picker pdg-acf-multi-dates-picker-wrap">
 			<div class="pdg-mdp-container"></div>
-			<textarea id="<?php echo esc_attr($field['id']); ?>" class="pdg-acf-multi-dates-picker-input<?php if(!$field['display_input']) echo ' hide'; ?>" name="<?php echo esc_attr($field['name']); ?>"><?php echo esc_attr($field['value']) ?></textarea>
+			<textarea id="<?php echo esc_attr($field['id']); ?>" class="pdg-acf-multi-dates-picker-input<?php if(!$field['display_input']) echo ' hide'; ?>" name="<?php echo esc_attr($field['name']); ?>"><?php echo esc_attr($value); ?></textarea>
 		</div>
 		<?php
 	}
@@ -321,17 +325,13 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	*  @param	$field (array) the field array holding all the field options
 	*  @return	$value
 	*/
-	
-	/*
-	
+		
 	function load_value( $value, $post_id, $field ) {
 		
 		return $value;
 		
 	}
-	
-	*/
-	
+		
 	
 	/*
 	*  update_value()
@@ -347,17 +347,14 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	*  @param	$field (array) the field array holding all the field options
 	*  @return	$value
 	*/
-	
-	/*
-	
+		
 	function update_value( $value, $post_id, $field ) {
 		
+		$value = explode(', ', $value);
 		return $value;
 		
 	}
-	
-	*/
-	
+		
 	
 	/*
 	*  format_value()
@@ -375,33 +372,12 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	*  @return	$value (mixed) the modified value
 	*/
 		
-	/*
 	
 	function format_value( $value, $post_id, $field ) {
 		
-		// bail early if no value
-		if( empty($value) ) {
-		
-			return $value;
-			
-		}
-		
-		
-		// apply setting
-		if( $field['font_size'] > 12 ) { 
-			
-			// format the value
-			// $value = 'something';
-		
-		}
-		
-		
-		// return
 		return $value;
 	}
-	
-	*/
-	
+		
 	
 	/*
 	*  validate_value()
