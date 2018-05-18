@@ -3,7 +3,7 @@ Contributors: devnanguo
 Donate link: https://wordpress.org/
 Requires at least: 3.6.0
 Tested up to: 4.9.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,9 @@ This ACF field type is compatible with:
 
 
 == Upgrade Notice == 
+= 1.1.1 =
+- Fixed empty value error for v4
+
 = 1.1.0 =
 - Output array
 
