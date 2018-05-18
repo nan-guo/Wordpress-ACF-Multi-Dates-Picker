@@ -291,7 +291,8 @@ class pdg_acf_field_multi_dates_picker extends acf_field {
 	function format_value( $value, $post_id, $field )
 	{
 		$value = json_decode($value);
-		$value = implode(',', $value);
+		if (!empty($value)) 
+			$value = implode(',', $value);
 		return $value;
 	}
 	
